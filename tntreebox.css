@@ -1,0 +1,24 @@
+
+
+/***************[tree box]******************/
+.tntreebox{font-size: 15px;clear: both;background-color: #F8F9FA;box-shadow: 0 3px 3px rgba(57,73,103,.05) inset;text-align: left;}
+.tntreebox .list{height: 200px;border: 1px solid #ddd;clear: both;}
+.tntreebox input[type=checkbox],.tntreebox em{
+    width: 22px;height: 22px;vertical-align: middle;margin: 0 !important;display: inline-block;
+}
+.tntreebox .box{width: 200px;height: 100%;overflow: auto;float: left;}
+.tntreebox ul{margin: 0;padding: 0;}
+.tntreebox li{list-style-type:none;height: 30px;padding: 0 0 0 10px;cursor: pointer;overflow: none;}
+.tntreebox li:hover,.tntreebox .cur{background-color: #ccc;}
+.tntreebox .selected{background-color:#27719C;}
+.tntreebox .search{width: 98%;height:90%;border: none;}
+
+.tntreebox .hide,.tntreebox .hide2{display: none;}
+.tntreebox label{line-height: 30px;vertical-align: middle;margin:0!important;cursor: pointer;}
+.tntreebox .children span:before{content: ">";display: block;right: 0px;width: 30px;height: 30px;float: right;}
+
+.tntreebox .header{clear: both;position: relative;min-height: 60px;max-height: 120px;overflow-x:hide;overflow-y:auto;}
+.tntreebox .header div,.tntreebox .header  a{display:block;float: left;padding:3px 10px;margin: 5px;}
+.tntreebox .header div span,.tntreebox .header  a{cursor: pointer;}
+.tntreebox .header div{background-color: #ccc;border-radius: 5px;}
+.tntreebox .header div span{padding: 5px 0 5px 5px;margin: 0 0 0 10px;font-size: 20px;}

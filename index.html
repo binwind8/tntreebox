@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TnTreebox</title>
+	<script type="text/javascript" src="http://aso.39gs.com/js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="tntreebox.js?v=35"></script>
+    <link rel="stylesheet" type="text/css" href="tntreebox.css?v=27" />
+</head>
+<body style="text-align:center;">
+    <div id='treebox' style="width: 500px;margin: 100px auto;"></div>
+    <script type="text/javascript">
+    	$(function(){
+    		var data = [];
+	    	for(var i=0;i<10;i++){
+	    		if(i==2){
+	    			var no_box = true;
+	    		}else{
+	    			var no_box = false
+	    		}
+	    		data.push({
+	    			id:'p_'+i,
+	    			name:'父选项'+i,
+	    			no_box:no_box,
+	    		});
+	    	}
+
+	    	for(var i=0;i<10;i++){
+	    		data.push({
+	    			id:'c_'+i,
+	    			name:'子选项1_'+i,
+	    			parent_id:'p_1',
+	    		});
+	    	}
+	    	for(var i=10;i<1000;i++){
+	    		data.push({
+	    			id:'c_'+i,
+	    			name:'父选项2_'+i,
+	    			parent_id:'p_2'
+	    			//is_select:true,
+	    		});
+	    	}
+	    	tnTreeBox('treebox','checkboxname',data,['c_1','c_2']);
+    	});
+
+    </script>
+    <a href="http://www.39gs.com/archive/326.html">js多级联动选择(checkbox)插件-tntreebox</a> | <a href="//www.39gs.com/">拖鞋小站</a>
+<div style="display: none;">
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=64928696" charset="UTF-8"></script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261572618'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261572618' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+</html>
